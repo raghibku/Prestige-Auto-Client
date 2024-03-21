@@ -1,4 +1,7 @@
+'use client'
+import { logout } from "@/app/redux/features/users/userSlice"
 import Link from "next/link"
+import { useDispatch, useSelector } from "react-redux"
 
 
 const Navbar = () => {
@@ -6,9 +9,9 @@ const Navbar = () => {
     <li><Link href='/'>Home</Link> </li>
     <li><Link href='/add-product'>Add Product</Link> </li>
     <li><Link href='/my-cart'>My Cart</Link> </li>
-
-
   </>
+  const dispatch = useDispatch()
+  const user = useSelector((state:any)=>state.user.userInfo);
   return (
     <div className='w-full flex justify-center items-center '>
       <div className="navbar flex justify-between  bg-primary w-full px-4 lg:px-12">
@@ -35,7 +38,16 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end flex justify-center items-center w-fit  md:w-full text-white gap-2">
-
+          {
+            user.name ? 
+            <div className="flex justify-center items-center gap-3">
+              <button onClick={()=>{dispatch(logout())}} className="btn btn-outline text-white">LogOut</button> 
+              <p>{user.name}</p>
+            </div>
+            : 
+            <Link href='/login'>Login</Link>
+          }
+          
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const id = props.id
     const [car, setCar] = useState<any|null>(null);
 
     useEffect(() => {
-        fetch(`https://brand-shop-server-dw6nsjbsy-raghibs-projects.vercel.app/car/${id}`)
+        fetch(`http://localhost:5000/car/${id}`)
             .then(res => res.json())
             .then(data => setCar(data))
     }, [])
@@ -21,7 +21,7 @@ const id = props.id
     //     }
 
     //     console.log(newCartItem)
-    //     fetch('https://brand-shop-server-dw6nsjbsy-raghibs-projects.vercel.app/cart', {
+    //     fetch('http://localhost:5000/cart', {
     //         method: 'POST',
     //         headers: {
     //             'content-type': 'application/json'

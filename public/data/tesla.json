@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "photoURL": "https://source.unsplash.com/time-lapse-photography-of-black-sedan-on-road-Qm_n6aoYzDs",
+        "name": "Tesla Model S",
+        "brandName": "Tesla",
+        "type": "Electric Sedan",
+        "price": 80000,
+        "shortDescription": "The Tesla Model S is a premium electric sedan with cutting-edge technology.",
+        "rating": 4.9
+    },
+    {
+        "id": 2,
+        "photoURL": "https://source.unsplash.com/white-coupe-D1W5QenBzlU",
+        "name": "Tesla Model 3",
+        "brandName": "Tesla",
+        "type": "Electric Sedan",
+        "price": 45000,
+        "shortDescription": "The Tesla Model 3 is a compact electric sedan designed for mass market appeal.",
+        "rating": 4.7
+    },
+    {
+        "id": 3,
+        "photoURL": "https://source.unsplash.com/a-couple-of-people-standing-next-to-a-black-car-aCnyeL2eiXE",
+        "name": "Tesla Model X",
+        "brandName": "Tesla",
+        "type": "Electric SUV",
+        "price": 90000,
+        "shortDescription": "The Tesla Model X is a luxury electric SUV known for its falcon-wing doors.",
+        "rating": 4.6
+    },
+    {
+        "id": 4,
+        "photoURL": "https://source.unsplash.com/a-black-car-parked-in-a-garage-WdtTIajKxrc",
+        "name": "Tesla Model Y",
+        "brandName": "Tesla",
+        "type": "Electric SUV",
+        "price": 55000,
+        "shortDescription": "The Tesla Model Y is a versatile electric SUV with ample cargo space.",
+        "rating": 4.8
+    },
+    {
+        "id": 5,
+        "photoURL": "https://source.unsplash.com/white-lamborghini-aventador-parked-in-building-7_OQMgoGzDw",
+        "name": "Tesla Roadster",
+        "brandName": "Tesla",
+        "type": "Electric Sports Car",
+        "price": 200000,
+        "shortDescription": "The Tesla Roadster is an all-electric sports car with unparalleled acceleration.",
+        "rating": 5.0
+    }
+]

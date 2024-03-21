@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface Props {bName : string}
-
+// http://localhost:5000
 
 const BrandDetail = (props:Props) => {
     // console.log(params)
@@ -12,7 +12,7 @@ const BrandDetail = (props:Props) => {
     const [cars, setCars] = useState<any|null>(null)
     const [isFetchComplete, setIsFetchComplete] = useState(false);
     useEffect(() => {
-        fetch(`https://brand-shop-server-dw6nsjbsy-raghibs-projects.vercel.app/cars/${brandName}`)
+        fetch(`http://localhost:5000/cars/${brandName}`)
             .then(res => res.json())
             .then(data => {
                 setCars(data);

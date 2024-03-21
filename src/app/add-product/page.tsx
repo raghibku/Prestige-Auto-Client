@@ -1,8 +1,12 @@
+import AddProductPage from "@/components/ui/AddProductPage"
 
 
 const AddProduct = () => {
   return (
-    <div>AddProduct</div>
+    <div>
+      
+      <AddProductPage />
+    </div>
   )
 }
 
